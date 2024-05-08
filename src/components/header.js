@@ -22,7 +22,7 @@ function AppHeader() {
       <div className="socials header-socials">
         <ul>
           <li><a href="https://mobile.facebook.com/profile.php?id=61557475474340&_rdc=1&_rdr"><i className="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://twitter.com/Connection0201"><i className="fab fa-twitter"></i></a></li>
+          <li><a href="https://twitter.com/Connection0201"><i className="fab fa-x-twitter"></i></a></li>
           <li><a href="https://www.linkedin.com/in/connection-mozambique-a4b1b8296/"><i className="fab fa-linkedin-in"></i></a></li>
           <li><a href="https://www.instagram.com/connectionmozambique"><i className="fa-brands fa-square-instagram"></i></a></li>
         </ul>
