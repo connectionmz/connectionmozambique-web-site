@@ -37,7 +37,7 @@ const servicesData = [
     title: 'Administração de Rede',
     description: <ul class="list-unstyled">
 <li><i class="fas fa-arrow-right-long"></i> Instalação e configuração de rede</li>
-<li><i class="fas fa-arrow-right-long"></i> Gestão de endereços IPli</li>
+<li><i class="fas fa-arrow-right-long"></i> Gestão de endereços IP</li>
 <li><i class="fas fa-arrow-right-long"></i> Segurança de rede</li>
 <li><i class="fas fa-arrow-right-long"></i> Monitoramento de rede</li>
 <li><i class="fas fa-arrow-right-long"></i> Gerenciamento de usuários e acesso</li>
@@ -70,8 +70,8 @@ function AppServices() {
     <section id="services" className="block services-block">
       <Container fluid>
         <div className="title-holder">
-          <h2>Nossos servicos</h2>
-          <div className="subtitle">servicos que fornecemos</div>
+          <h2>Nossos serviços</h2>
+          <div className="subtitle">serviços que fornecemos</div>
         </div>
         <Row>
           {

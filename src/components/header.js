@@ -13,9 +13,9 @@ function AppHeader() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Link to="/" className='barra-nav-menu-item'>Pagina Inicial </Link>
-            <Link to="/servicos" className='barra-nav-menu-item'> Servicos </Link>
+            <Link to="/servicos" className='barra-nav-menu-item'> Serviços </Link>
             <Link to="/contacte_nos" className='barra-nav-menu-item'>Contacte-nos </Link>
-            <Link to="/sobre_nos" className='barra-nav-menu-item'> Sobre Nos</Link>
+            <Link to="/sobre_nos" className='barra-nav-menu-item'> Sobre Nós</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
