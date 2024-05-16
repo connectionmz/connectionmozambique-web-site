@@ -137,7 +137,12 @@ function AppWorks() {
       <Col sm={4} key={works.id}>
         <div className="portfolio-wrapper">
           <a href={works.link}>
-            <Image src={works.image} />
+            <Image
+              src={works.image}
+              alt={works.title}
+              loading="lazy" // Carregamento lazy
+              className="img-fluid" // Adicione a classe img-fluid para garantir que a imagem seja responsiva
+            />
             <div className="label text-center">
               <h3>{works.title}</h3>
               <p>{works.subtitle}</p>
