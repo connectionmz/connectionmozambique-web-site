@@ -289,7 +289,11 @@ textarea {
 }
 
 .socials .fab {
-  line-height: 2;
+  line-height: 3;
+}
+
+.socials .fa-brands{
+  line-height: 3
 }
 
 .go-top {
@@ -638,7 +642,6 @@ textarea {
 
 .teams-block .image {
   margin: 0 0 20px;
-  box-shadow: 0px 0px 2px 1px var(--color-secondary);
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -669,12 +672,8 @@ textarea {
 
 .teams-block 
 .designation {
-  display: block;
-  font-style: italic;
-  margin: 0 0 20px;
-}
-.teams-block 
-.teams-name {  
+  margin: 5px;
+  font-size: medium;
 }
 
 .teams-block
@@ -1117,6 +1116,8 @@ textarea {
     font-size: 26px;
     margin: 0;
   }
+
+  
 }
 
 
@@ -1161,6 +1162,7 @@ textarea {
 }
 
 .barra-nav-menu-item:hover, .barra-nav-menu-item:focus {
+  text-decoration: underline;
   color: var(--color-primary);
 }
 
@@ -1171,7 +1173,7 @@ textarea {
 /* Resolucao das imagens fixa!!    */
 .teams-block .image img {
   width: 100%;
-  height: 350px;
+  height: 420px;
 }
 
 .temp{
@@ -1186,13 +1188,11 @@ textarea {
 }
 
 .titulo{
-  font-style: italic;
   text-align: center;
   font-weight: bold;
 }
 
 .servicos-content{
-  color: var(--white);
   text-align: center;
   padding: 10px;
 }
@@ -1202,26 +1202,42 @@ textarea {
   color: var(--color-primary);
 }
 
-.cartao{
-  box-shadow: 0px 0px 2px 2px var(--color-primary);
-  width: 100%;
-  height: 150px;
-  background-color: var(--color-secondary);
-  padding: 8px;
-  margin: -2px;
-  text-align: center;
 
+.cartao{
+  width: 100%;
+  height: 345px;
+  box-shadow: 0 0 0 1px var(--color-secondary);
+  text-align: center;
 }
+
+.cartao h3{
+  color: black;
+}
+
 
 .cartao:hover{
-  box-shadow: 0px 0px 4px 4px var(--color-primary);
+  box-shadow: 0 0 8px 2px var(--color-secondary);
 }
 
+
+@media only screen and (max-width: 1000px) {
+  .cartao{
+    display: inline-block;
+  }
+}
 
 .link{
+  cursor: pointer;
   text-decoration: none;
-  color: var(--white);
+  color: var(--color-secondary);
+  display: block;
+
 }
+
+.link:hover{
+  text-decoration: underline;
+}
+
 /*********************************   Henriques *****************************************/
 
 .fixed-header {
@@ -1232,4 +1248,28 @@ textarea {
   z-index: 1000; /* Para garantir que o header esteja acima de outros elementos */
   background-color: #fff; /* Adapte a cor de fundo conforme necessário */
   /* Adicione outras propriedades de estilo conforme necessário */
+}
+
+
+.valores{
+  background-image: url(./assets/images/blur-Photoroom\ \(9\).png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.icon {
+  width: 50%;
+  height: 50%;
+  font-size: 20vh;
+  color: var(--color-secondary);
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer-socials{
+  display: inline-block;
 }

@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import AppWorks from './works';
+import AppContacts from './contact'
 
 
 const servicesData = [
@@ -74,43 +75,8 @@ export default class PaginaInicial extends Component {
       <Container fluid>
         <AppHero />
         <div>
-          <Row>
-            <Col sm={4}>
-              <div className="temp" >
-
-                <h1 className='titulo'>Missão</h1>
-                <p >Ser a referência em assistência técnica de TI, proporcionando serviços ágeis, especializados e 
-                  de qualidade. Resolver desafios com competência e inovação, garantindo a continuidade das operações 
-                  dos clientes. Ser um parceiro confiável, permitindo que alcancem o sucesso sem preocupações tecnológicas.</p>
-
-              </div>
-            </Col>
-
-            <Col sm={4}>
-              <div className="temp" >
-                <h1 className='titulo'>Visão</h1>
-                <p >Ser líderes reconhecidos e inovadores em assistência técnica de TI, buscando constantemente 
-                  elevar os padrões do setor e oferecer soluções que se destacam em eficiência, confiabilidade e
-                   inovação.</p>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className="temp" >
-                <h1 className='titulo'>Valores</h1>
-                <ul className='list-valores'>
-                  <li>Confiança e Integridade</li>
-                  <li>Aprendizado Contínuo</li>
-                  <li> Inovação</li>
-                  <li>Compromisso com o Cliente</li>
-                  <li>Trabalho em Equipa</li>
-                </ul>
-              </div>
-
-            </Col>
-
-
-          </Row>
-          <Row className='servicos-content'>
+          
+        <Row className='servicos-content valores'>
             <Row>
               <Col sm={12}>
                 <div className="title-holder">
@@ -123,8 +89,7 @@ export default class PaginaInicial extends Component {
               {
                 servicesData.map(services => {
                   return (
-
-                    <Col sm={6} className='cartao' key={services.id}>
+                    <Col sm={3} className='cartao' key={services.id}>
                       <Link to="/servicos" className='link'>
                         <div className="icon">
                           <i className={services.icon}></i>
@@ -141,6 +106,7 @@ export default class PaginaInicial extends Component {
           </Row>
         </div>
         <AppWorks />
+        <AppContacts />
       </Container >
 
     )

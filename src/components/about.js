@@ -5,9 +5,7 @@ function AppAbout() {
 
 
   return (
-    <section id="about" className="block about-block">
       <AppTeams />
-    </section>
   );
 }
 

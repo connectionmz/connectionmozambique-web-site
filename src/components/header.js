@@ -3,10 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import AppHero from './hero';
 
 function AppHeader() {
   return (
-    <Navbar expand="lg" className="navbar justify-content-center">
+    <Navbar expand="lg" className="navbar">
       <Container>
         <Navbar.Brand href="/" className='logo-conteiner'> <img src='/images/logo.png' width="180" height="180" alt="LOGO" /> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

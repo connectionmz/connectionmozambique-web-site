@@ -8,120 +8,43 @@ import Pagination from 'react-bootstrap/Pagination';
 const worksData = [
   {
     id: 1,
-    link: 'https://www.google.com',
+    link: 'https://connectionmozambique-website.web.app/',
     image: require('../assets/images/1.jpg'),
-    title: 'Lonely Path',
-    subtitle: 'Web Design'
+    title: 'Formacao CFTV',
+    subtitle: 'Trabalho de campo'
   },
   {
     id: 2,
-    link: 'https://www.google.com',
-    image: require('../assets/images/2.jpg'),
-    title: 'Photographer Girl',
-    subtitle: 'Branding'
+    link: 'https://connectionmozambique-website.web.app/',
+    image: require('../assets/images/17.jpg'),
+    title: 'Formacao CFTV',
+    subtitle: 'Instalacao de Sistema de Video vigilancia'
   },
   {
     id: 3,
-    link: 'https://www.google.com',
-    image: require('../assets/images/3.jpg'),
-    title: 'The Difference',
-    subtitle: 'Web Design'
+    link: 'https://connectionmozambique-website.web.app/',
+    image: require('../assets/images/19.jpg'),
+    title: 'Formacao CFTV',
+    subtitle: 'Trabalho de campo'
   },
   {
     id: 4,
-    link: 'https://www.google.com',
-    image: require('../assets/images/20.jpg'),
-    title: 'Nature Patterns',
-    subtitle: 'Branding'
+    link: 'https://connectionmozambique-website.web.app/',
+    image: require('../assets/images/22.jpg'),
+    title: 'Instalacao de CFTV',
+    subtitle: 'Instalacao de Sistema de Video vigilancia'
   },
   {
     id: 5,
-    link: 'https://www.google.com',
-    image: require('../assets/images/21.jpg'),
-    title: 'The Difference',
-    subtitle: 'Photography'
-  },
-  {
-    id: 6,
-    link: 'https://www.google.com',
-    image: require('../assets/images/22.jpg'),
-    title: 'Winter Sonata',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 7,
-    link: 'https://www.google.com',
-    image: require('../assets/images/23.jpg'),
-    title: 'Lonely Path',
-    subtitle: 'Branding'
-  },
-  {
-    id: 8,
-    link: 'https://www.google.com',
+    link: 'https://connectionmozambique-website.web.app/',
     image: require('../assets/images/24.jpg'),
-    title: 'Appreciation',
-    subtitle: 'Photography'
-  },
-  {
-    id: 9,
-    link: 'https://www.google.com',
-    image: require('../assets/images/25.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 10,
-    link: 'https://www.google.com',
-    image: require('../assets/images/26.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 11,
-    link: 'https://www.google.com',
-    image: require('../assets/images/8.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 12,
-    link: 'https://www.google.com',
-    image: require('../assets/images/9.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 13,
-    link: 'https://www.google.com',
-    image: require('../assets/images/7.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 14,
-    link: 'https://www.google.com',
-    image: require('../assets/images/6.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 15,
-    link: 'https://www.google.com',
-    image: require('../assets/images/5.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
-  },
-  {
-    id: 16,
-    link: 'https://www.google.com',
-    image: require('../assets/images/4.jpg'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
+    title: 'Instalacao de CFTV',
+    subtitle: 'Trabalho de campo'
   }
 ]
 
 function AppWorks() {
-  const itemsPerPage = 6;
+  const itemsPerPage = 9;
   const [activePage, setActivePage] = useState(1);
 
   const handlePageChange = (pageNumber) => {
@@ -140,8 +63,8 @@ function AppWorks() {
             <Image
               src={works.image}
               alt={works.title}
-              loading="lazy" // Carregamento lazy
-              className="img-fluid" // Adicione a classe img-fluid para garantir que a imagem seja responsiva
+              loading="lazy"
+              className="img-fluid"
             />
             <div className="label text-center">
               <h3>{works.title}</h3>
