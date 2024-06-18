@@ -38,14 +38,14 @@ function AppFooter() {
               <Link to="/contacte_nos" className='link'>Contacte-nos </Link>
               <Link to="/sobre_nos" className='link'> Sobre Nós</Link>
             </div>
-            <div className="socials">
-        <ul>
-          <li className="footer-socials"><a href="https://mobile.facebook.com/profile.php?id=61557475474340&_rdc=1&_rdr"><i className="fab fa-facebook-f"></i></a></li>
-          <li className="footer-socials"><a href="https://twitter.com/Connection0201"><i className="fab fa-x-twitter"></i></a></li>
-          <li className="footer-socials"><a href="https://www.linkedin.com/in/connection-mozambique-a4b1b8296/"><i className="fab fa-linkedin-in"></i></a></li>
-          <li className="footer-socials"><a href="https://www.instagram.com/connectionmozambique"><i className="fa-brands fa-instagram"></i></a></li>
-        </ul>
-      </div>
+            <div className="socials-footer">
+              <ul>
+                <li className="footer-socials"><a href="https://mobile.facebook.com/profile.php?id=61557475474340&_rdc=1&_rdr"><i className="fab fa-facebook-f"></i></a></li>
+                <li className="footer-socials"><a href="https://twitter.com/Connection0201"><i className="fab fa-x-twitter"></i></a></li>
+                <li className="footer-socials"><a href="https://www.linkedin.com/in/connection-mozambique-a4b1b8296/"><i className="fab fa-linkedin-in"></i></a></li>
+                <li className="footer-socials"><a href="https://www.instagram.com/connectionmozambique"><i className="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
           </div>
         </Col>
         <Col sm={3}>
@@ -81,7 +81,24 @@ function AppFooter() {
         </Col>
       </Row>
 
-      <div className="copyright"> &copy; 2024 Corporate. All Right Reserved.</div>
+      <div className="copyright"> 
+          <ul className="footer-contacts">
+            <li>
+              <i className="fas fa-envelope"></i>
+              connectionmozambique@gmail.com
+            </li>
+            <li>
+              <i className="fas fa-phone"></i>
+              +258 868536500
+            </li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i>
+              Pemba, Cabo Delgado
+            </li>
+          </ul>
+        
+        &copy; 2024 Corporate. All Right Reserved.
+        </div>
       {
         showTopBtn && (
           <div className="go-top" onClick={goTop}></div>

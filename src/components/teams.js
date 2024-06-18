@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-const teamsData = [
+const teamsHead = [
   {
     id: 1,
     image: require('../assets/images/Lasquinho.jpg') ,
@@ -23,9 +23,12 @@ const teamsData = [
     name: 'Daudo Basilio',
     designation: 'Director do Departamento de Operação',
     description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
-  },
+  }
+]
+
+const teamsStaff = [
   {
-    id: 3,
+    id: 1,
     image: require('../assets/images/Ancha.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -35,7 +38,7 @@ const teamsData = [
     description: 'Formada em Designe pela Connection Mozambique.'
   },
   {
-    id: 4,
+    id: 2,
     image: require('../assets/images/Kizito.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -45,7 +48,7 @@ const teamsData = [
     description: 'Licenciada em Gestão de recursos Humanos e relações Laborais pela Universidade Católica de Moçambique Faculdade de Educação. '
   },
   {
-    id: 5,
+    id: 3,
     image: require('../assets/images/Elias.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -55,7 +58,7 @@ const teamsData = [
     description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
   },
   {
-    id: 6,
+    id: 4,
     image: require('../assets/images/Tembe.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -65,7 +68,7 @@ const teamsData = [
     description: 'Licenciado em Engenharia Informática pela Universidade Lúrio, Faculdade de Engenharia.'
   },
   {
-    id: 7,
+    id: 5,
     image: require('../assets/images/Supaer.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -75,7 +78,7 @@ const teamsData = [
     description: 'Licenciado em Engenharia Informática pela Universidade Lúrio, Faculdade de Engenharia.'
   },
   {
-    id: 8,
+    id: 6,
     image: require('../assets/images/Nadia.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -85,7 +88,7 @@ const teamsData = [
     description: 'Licenciado em Engenharia Informática pela Universidade Lúrio, Faculdade de Engenharia.'
   },
   {
-    id: 9,
+    id: 7,
     image: require('../assets/images/Agostinho.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -96,7 +99,7 @@ const teamsData = [
 
   },
   {
-    id: 10,
+    id: 8,
     image: require('../assets/images/Inok.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -107,7 +110,7 @@ const teamsData = [
 
   },
   {
-    id: 11,
+    id: 9,
     image: require('../assets/images/Mohammad.jpg'),
     fbLink: '#',
     twitterLink: '#',
@@ -115,6 +118,28 @@ const teamsData = [
     name: 'Mohammad Vicente',
     designation: 'Diretor do Departamento de Software',
     description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
+
+  },
+  {
+    id: 10,
+    image: require('../assets/images/Braco-1.png'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Magrete Joao Mario',
+    designation: 'Assistente Administrativa',
+    description: ''
+
+  },
+  {
+    id: 11,
+    image: require('../assets/images/Alex.jpg'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Alex Abreu Joao',
+    designation: 'Responsavel da Logistica',
+    description: ''
 
   }
 ]
@@ -129,9 +154,33 @@ function AppTeams() {
           <h2>Nossos Colaboradores</h2>
           <div className="subtitle">Alguns dos nossos especialistas</div>
         </div>
-        <Row>
+        <Row className='justify-content-center'>
           {
-            teamsData.map(teams => {
+            teamsHead.map(teams => {
+              return (
+                <Col sm={3} key={teams.id} >
+                  <div className='image'>
+                    <Image src={teams.image} className="rounded-circle shadow-4-strong" />
+                    <div className='overlay'>
+                      <div className='socials'>
+                        <ul>
+                          <li><a href={teams.fbLink}><i className="fab fa-facebook-f"></i></a></li>
+                          <li><a href={teams.twitterLink}><i className="fab fa-twitter"></i></a></li>
+                          <li><a href={teams.linkedinLink}><i className="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h5 className='teams-name'>{teams.name}</h5>
+                    <h5 className='designation'>{teams.designation}</h5>
+                  </div>
+                </Col>
+              );
+            })
+          }
+        </Row>
+        <Row className='justify-content-center'>
+        {
+            teamsStaff.map(teams => {
               return (
                 <Col sm={3} key={teams.id}>
                   <div className='image'>

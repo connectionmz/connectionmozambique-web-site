@@ -81,7 +81,7 @@ export default class PaginaInicial extends Component {
               <Col sm={12}>
                 <div className="title-holder">
                   <h2 className='label-nossos-servicos'>Nossos Serviços</h2>
-                  <div className="subtitle">Nossos espetaculares serviços</div>
+                  <div className="subtitle">Serviços</div>
                 </div>
               </Col>
             </Row>
