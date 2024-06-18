@@ -23,6 +23,17 @@ const teamsHead = [
     name: 'Daudo Basilio',
     designation: 'Director do Departamento de Operação',
     description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
+  },
+  {
+    id: 3,
+    image: require('../assets/images/Mohammad.jpg'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Mohammad Vicente',
+    designation: 'Diretor do Departamento de Software',
+    description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
+
   }
 ]
 
@@ -73,7 +84,7 @@ const teamsStaff = [
     fbLink: '#',
     twitterLink: '#',
     linkedinLink: '#',
-    name: 'Mario Supaer',
+    name: 'Mário Supaer',
     designation: 'Técnico informático ',
     description: 'Licenciado em Engenharia Informática pela Universidade Lúrio, Faculdade de Engenharia.'
   },
@@ -104,46 +115,86 @@ const teamsStaff = [
     fbLink: '#',
     twitterLink: '#',
     linkedinLink: '#',
-    name: 'Inoque Jose',
-    designation: 'Chefia e Direção',
+    name: 'Inoque José',
+    designation: 'Técnico de Contabilidade',
     description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
 
   },
   {
     id: 9,
-    image: require('../assets/images/Mohammad.jpg'),
-    fbLink: '#',
-    twitterLink: '#',
-    linkedinLink: '#',
-    name: 'Mohammad Vicente',
-    designation: 'Diretor do Departamento de Software',
-    description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
-
-  },
-  {
-    id: 10,
     image: require('../assets/images/Braco-1.png'),
     fbLink: '#',
     twitterLink: '#',
     linkedinLink: '#',
-    name: 'Magrete Joao Mario',
+    name: 'Magrete João Mário',
     designation: 'Assistente Administrativa',
     description: ''
 
   },
   {
-    id: 11,
+    id: 10,
     image: require('../assets/images/Alex.jpg'),
     fbLink: '#',
     twitterLink: '#',
     linkedinLink: '#',
-    name: 'Alex Abreu Joao',
-    designation: 'Responsavel da Logistica',
+    name: 'Alex Abreu João',
+    designation: 'Responsável da Logistica',
     description: ''
 
+  },
+  {
+    id: 11,
+    image: require('../assets/images/Braco-1.png'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Benjamim Nacir Machaca',
+    designation: 'Técnico de Frio e Climatização',
+    description: ''
+
+  },
+  {
+    id: 12,
+    image: require('../assets/images/Braco-1.png'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Momade Lucumano',
+    designation: 'Técnico de CFTV (Estagiário)',
+    description: ''
+
+  },
+  {
+    id: 13,
+    image: require('../assets/images/Braco-1.png'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Ester Atanásio Sumaila',
+    designation: 'Técnica de CFTV (Estagiária)',
+    description: ''
+  },
+  {
+    id: 14,
+    image: require('../assets/images/Braco-1.png'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Amina Saide Tamane',
+    designation: 'Técnica de CFTV (Estagiária)',
+    description: ''
+  },
+  {
+    id: 15,
+    image: require('../assets/images/Braco-1.png'),
+    fbLink: '#',
+    twitterLink: '#',
+    linkedinLink: '#',
+    name: 'Momade Abubacar',
+    designation: 'Técnico de CFTV (Estagiário)',
+    description: ''
   }
 ]
-
 
 
 function AppTeams() {

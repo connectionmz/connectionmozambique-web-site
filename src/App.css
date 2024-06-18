@@ -890,7 +890,7 @@ textarea {
   color: 23238E;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 900px) {
 
   a[href^=tel],
   a[href^=skype],
@@ -900,7 +900,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 900px) {
   body {
     font-size: 15px;
     line-height: 24px;
@@ -971,14 +971,14 @@ textarea {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 .socials{
   width: 100%;
 }
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
   h2 {
     font-size: 20px;
   }
@@ -1226,7 +1226,7 @@ textarea {
 
 @media only screen and (max-width: 1000px) {
   .cartao{
-    display: inline-block;
+    display: block;
   }
 }
 

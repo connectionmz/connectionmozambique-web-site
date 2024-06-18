@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from "react-router-dom";
 
+
+const now = new Date();
+
 function AppFooter() {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
@@ -97,7 +100,7 @@ function AppFooter() {
             </li>
           </ul>
         
-        &copy; 2024 Corporate. All Right Reserved.
+        &copy; {now.getFullYear()} Corporate. All Right Reserved.
         </div>
       {
         showTopBtn && (
