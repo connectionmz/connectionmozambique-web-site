@@ -31,7 +31,7 @@ const teamsHead = [
     twitterLink: '#',
     linkedinLink: '#',
     name: 'Mohammad Vicente',
-    designation: 'Diretor do Departamento de Software',
+    designation: 'Director do Departamento de Software',
     description: 'Licenciado em Tecnologia de informação pela Universidade Católica de Moçambique, Faculdade de Turismo e Informática.'
 
   }
